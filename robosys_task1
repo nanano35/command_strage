@@ -3,13 +3,26 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 import sys
-num1 = 0
+e_counter = 0
+z_counter = 0
 
 while (ch := sys.stdin.read(1)) != "":
     if ch == 'e':
-        num1 += 1
+        e_counter  += 1
+
     elif ch == 'E':
-        num1 += 1
+        e_counter  += 1
 
-print("%d" % num1)
+    elif ch == 'z':
+        z_counter  += 1
 
+    elif ch == 'Z':
+        z_counter  += 1
+
+    else:
+        continue
+
+
+print("%d" % e_counter)
+
+print("%d" % z_counter)
