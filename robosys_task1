@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2026 Yoshiaki Iwasawa
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+num1 = 0
+
+while (ch := sys.stdin.read(1)) != "":
+    if ch == 'e':
+        num1 += 1
+    elif ch == 'E':
+        num1 += 1
+
+print("%d" % num1)
+
