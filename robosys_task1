@@ -22,7 +22,7 @@ while (ch := sys.stdin.read(1)) != "":
     else:
         continue
 
+ratio = e_counter / z_counter 
 
-print("%d" % e_counter)
+print("%f" % ratio)
 
-print("%d" % z_counter)
