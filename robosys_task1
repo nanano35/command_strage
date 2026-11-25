@@ -27,5 +27,5 @@ if z_counter == 0:
 
 ratio = e_counter / z_counter 
 
-print("%f" % ratio)
+print("%.2f" % ratio)
 
