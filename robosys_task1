@@ -22,6 +22,9 @@ while (ch := sys.stdin.read(1)) != "":
     else:
         continue
 
+if z_counter == 0:
+    sys.exit(1)
+
 ratio = e_counter / z_counter 
 
 print("%f" % ratio)
