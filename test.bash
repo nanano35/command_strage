@@ -11,19 +11,19 @@ res=0
 
 out=$(echo eEze | ./robosys_task1)
 [ "$?" = 0 ]            || ng "$LINENO"
-[ "${out}" = 3.000000 ] || ng "$LINENO"
+[ "${out}" = 3.00 ] || ng "$LINENO"
 
 out=$(echo eZ z | ./robosys_task1)
 [ "$?" = 0 ]            || ng "$LINENO"
-[ "${out}" = 0.500000 ] || ng "$LINENO"
+[ "${out}" = 0.50 ] || ng "$LINENO"
 
 out=$(echo eEあ7!z* | ./robosys_task1)
 [ "$?" = 0 ]            || ng "$LINENO"
-[ "${out}" = 2.000000 ] || ng "$LINENO"
+[ "${out}" = 2.00 ] || ng "$LINENO"
 
 out=$(echo zzZZzz | ./robosys_task1)
 [ "$?" = 0 ]            || ng "$LINENO"
-[ "${out}" = 0.000000 ] || ng "$LINENO"
+[ "${out}" = 0.00 ] || ng "$LINENO"
 
 out=$(echo あいうえおrp50{} | ./robosys_task1)
 [ "$?" = 1 ]            || ng "$LINENO"
