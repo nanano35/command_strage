@@ -9,8 +9,18 @@ ng () {
 
 res=0
 
-out=$(echo eEz e | ./robosys_task1)
+out=$(echo eEze | ./robosys_task1)
+[ "$?" = 0 ]            || ng "LINENO"
 [ "${out}" = 3.000000 ] || ng "LINENO"
+
+out=$(echo eZ z | ./robosys_task1)
+[ "$?" = 0 ]            || ng "LINENO"
+[ "${out}" = 0.500000 ] || ng "LINENO"
+
+out=$(echo eEあ7!z* | ./robosys_task1)
+[ "$?" = 0 ]            || ng "LINENO"
+[ "${out}" = 2.000000 ] || ng "LINENO"
+
 
 [ "${res}" = 0 ] && echo OK
 
