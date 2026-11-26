@@ -1,5 +1,5 @@
 #!/bin/bash
-# SPDX-FileCopyrightText:2026 Yoshiaki Iwasawa
+# SPDX-FileCopyrightText: 2026 Yoshiaki Iwasawa
 # SPDX-License-Identifier: BSD-3-Clause
 
 ng () {
