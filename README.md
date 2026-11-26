@@ -16,7 +16,5 @@ $ cat sample_text.txt | ./frequency_comparison<br>
 - このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
 - © 2026 Yoshiaki Iwasawa
 ### 使用例で使用したsample_text.txtの中身
-```
 The small café on the corner serves amazing espresso and warm croissants every morning. Yesterday, a breezy afternoon arrived, bringing a dozen hungry customers seeking shelter from the sudden drizzle. While jazz music played softly in the background, everyone enjoyed their cozy seats and watched the rain fall outside.
-```
 - 上記のsample_text.txtはGoogle Geminiにより作成。 
