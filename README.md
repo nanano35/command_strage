@@ -5,7 +5,7 @@
 
 渡されたテキストにおいて、アルファベットの"e"は"z"の何倍存在するかを表示する。
 ## 使用例
-$ cat sample_text.txt | ./frequency_comparison
+$ cat sample_text.txt | ./frequency_comparison<br>
 4.62
 ## 必要なソフトウェア
 - Python
