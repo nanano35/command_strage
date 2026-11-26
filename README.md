@@ -1,11 +1,11 @@
 # robosys_task1
 このリポジトリは自作したコマンドを置いておくためのものである。
-# Frequency_comparisonコマンド
+# frequency_comparisonコマンド
 ![test](https://github.com/nanano35/robosys2026/actions/workflows/test.yml/badge.svg)
 
 渡されたテキストにおいて、アルファベットの"e"は"z"の何倍存在するかを表示する。
 ## 使用例
-$ cat sample_text.txt | ./Frequency_comparison
+$ cat sample_text.txt | ./frequency_comparison
 4.62
 ## 必要なソフトウェア
 - Python

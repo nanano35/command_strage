@@ -9,27 +9,27 @@ ng () {
 
 res=0
 
-out=$(echo eEze | ./Frequency_comparison)
+out=$(echo eEze | ./frequency_comparison)
 [ "$?" = 0 ]            || ng "$LINENO"
 [ "${out}" = 3.00 ] || ng "$LINENO"
 
-out=$(echo eZ z | ./Frequency_comparison)
+out=$(echo eZ z | ./frequency_comparison)
 [ "$?" = 0 ]            || ng "$LINENO"
 [ "${out}" = 0.50 ] || ng "$LINENO"
 
-out=$(echo eEあ7!z* | ./Frequency_comparison)
+out=$(echo eEあ7!z* | ./frequency_comparison)
 [ "$?" = 0 ]            || ng "$LINENO"
 [ "${out}" = 2.00 ] || ng "$LINENO"
 
-out=$(echo zzZZzz | ./Frequency_comparison)
+out=$(echo zzZZzz | ./frequency_comparison)
 [ "$?" = 0 ]            || ng "$LINENO"
 [ "${out}" = 0.00 ] || ng "$LINENO"
 
-out=$(echo あいうえおrp50{} | ./Frequency_comparison)
+out=$(echo あいうえおrp50{} | ./frequency_comparison)
 [ "$?" = 1 ]            || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
-out=$(echo eeEEE | ./Frequency_comparison)
+out=$(echo eeEEE | ./frequency_comparison)
 [ "$?" = 1 ]            || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
